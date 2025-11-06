@@ -1,0 +1,104 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+
+ul.heroes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.heroes li {
+  display: flex;
+  background-image: linear-gradient(-54deg, rgb(56, 85, 167) 0%, rgb(80, 118, 219) 100%);
+  border-radius: 8px;
+  width: 260px;
+  
+}
+
+.heroes button {
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: 0;
+  border-radius: 4px;
+  display: flex;
+  align-items: stretch;
+  height: 1.8em;
+}
+
+.heroes button:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+  left: .1em;
+}
+
+.heroes button:active {
+  background-color: #525252;
+  color: #fafafa;
+}
+
+.heroes button.selected {
+  background-color: black;
+  color: white;
+}
+
+.heroes button.delete {
+  background-color: #fafafa;
+  color: red;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 16px 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+
+.heroes button.selected:hover {
+  background-color: #505050;
+  color: white;
+}
+
+.heroes button.selected:active {
+  background-color: black;
+  color: white;
+}
+
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0em 0.6em;
+  background-image: linear-gradient(-31deg, rgb(239, 210, 48) 0%, rgb(255, 151, 33) 100%);
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  line-height: 48px;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+.heroes .name {
+  align-self: center;
+}
+
+.heroes a {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-decoration: none;
+  flex: 8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  align-items: center;
+}
